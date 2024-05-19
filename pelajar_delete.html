@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="button.css">
+<h3>PADAM PELAJAR</h3>
+<form action="pelajar_delete.php" method="post"> 
+    <table> 
+        <tr>
+            <td>ID PELAJAR :</td>
+            <td><input type="text" id="idepelajar" onblur="semak()" name="idpelajar" placeholder="P000" pattern="[A-Z0-9]{4}" oninvalid="this.setCustomValidity('Sila masukkan 4 aksara')" oninput="this.setCustomValidity('')"></td>
+        </tr>
+    </table>
+    <button class="padam" class="padam" type="submit">PADAM</button>
+</form>

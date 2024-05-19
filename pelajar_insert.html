@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="button.css">
+<h3 class="panjang">BORANG TAMBAH PELAJAR</h3>
+<form class="panjang" action="pelajar_insert.php" method="post">
+    
+    <table id="warna">
+       <tr>
+           <td> ID PELAJAR :</td>
+           <td><input required type="text" id="idepelajar" onblur="semak()" name="idpelajar" placeholder="P000" pattern="[A-Z0-9]{4}" oninvalid="this.setCustomValidity('Sila masukkan 4 aksara')" oninput="this.setCustomValidity('')"></td>
+       </tr>
+       <tr> 
+           <td> NAMA PELAJAR :</td>
+           <td><input type="text" name="namapelajar"></td>
+       </tr>
+       <tr> 
+           <td> ID KELAS :</td>
+           <td><input type="text" name="idkelas"></td>
+        </tr>
+        <tr>
+            <td> PASSWORD :</td>
+            <td><input type="text" name="passpelajar"></td>
+        </tr>
+    </table>
+    <button class="semula" type="reset">RESET</button>
+    <button class="tambah" type="submit">TAMBAH</button>
+</form>
+
+<center>
+    <button class="hitam" onclick="black()">HITAM</button>
+    <button class="hijau" onclick="green()">HIJAU</button>
+    <button class="merah" onclick="red()">MERAH</button>
+    <button class="biru" onclick="blue()">BIRU</button>
+</center>
+
+<script>
+    function black()
+    {
+        document.getElementById('warna').style.color="black";
+    }
+    function green()
+    {
+        document.getElementById('warna').style.color="green";
+    }
+    function red()
+    {
+        document.getElementById('warna').style.color="red";
+    }
+    function blue()
+    {
+        document.getElementById('warna').style.color="blue";
+    }
+</script>

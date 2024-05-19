@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="button.css">
+
+<h3>BORANG KEMASKINI PELAJAR</h3>
+
+<form action="pelajar_update.php" method="post">
+    <table>
+        <tr>
+            <td> ID PELAJAR :</td>
+            <td><input required type="text" id="idepelajar" onblur="semak()" name="idpelajar" placeholder="P000" pattern="[A-Z0-9]{4}" oninvalid="this.setCustomValidity('Sila masukkan 4 aksara')" oninput="this.setCustomValidity('')"></td>
+        </tr>
+        <tr>
+            <td> NAMA PELAJAR :</td>
+            <td><input type="text" name="namapelajar"></td>
+        </tr>
+        <tr> 
+            <td> ID KELAS :</td>
+            <td><input type="text" name="idkelas"></td>
+        </tr>
+        <tr>
+            <td>PASSWORD :</td>
+            <td><input type="text" name="passpelajar"></td>
+        </tr>
+    </table>
+    <button class="semula" type="reset">RESET</button>
+    <button class="update" type="submit">UPDATE</button>
+</form>
