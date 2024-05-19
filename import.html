@@ -1,0 +1,25 @@
+<html>
+    <link rel="stylesheet" href="borang.css">
+    <link rel="stylesheet" href="button.css">
+    <body>
+        <h3 class="panjang">IMPORT DATA</h3>
+        <form action="import.php" class="panjang" method="post" enctype="multipart/form-data" class="import">
+            <table>
+                <tr>
+                    <td>NAMA JADUAL</td>
+                    <td>
+                        <select name="namatable">
+                            <option>pelajar</option>
+                            <option>guru</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NAMA FAIL</td>
+                    <td><input type="file" name="namafail" accept=".txt"></td>
+                </tr>
+            </table>    
+            <button class="import" type="submit">IMPORT</button>
+        </form>
+    </body>    
+</html>

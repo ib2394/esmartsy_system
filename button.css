@@ -1,0 +1,190 @@
+button {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+    color: black;
+    
+    width: 100px;
+    padding: 7px 8px 7px 32px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: lightcoral;
+    background-position: 8px;
+    background-repeat: no-repeat;
+    
+    
+}
+
+button:hover{
+    background-color: #AF7AC5;
+}
+
+button.login {
+    background-image: url(login1.png);
+}
+
+button.signup{
+    background-image: url(sign-up1.png);
+}
+
+button.plus{
+    background-image: url(tambah.png)
+}
+
+button.tambah {
+    background-image: url(add.png);
+}
+
+button.simpan {
+    background-image: url(save.png);
+}
+
+button.padam {
+    background-image: url(delete2.png);
+}
+
+button.update {
+    background-image: url(update.png);
+}
+
+button.merah {
+    background-image: url(red.png);
+    background-color: darkred;
+}
+button.merah:hover {
+    background-color: #CB0300;
+}
+
+button.biru {
+    background-image: url(blue.png);
+    background-color: #415CB8;
+}
+button.biru:hover {
+    background-color: #6E7DDE;
+}
+
+button.hijau {
+    background-image: url(green.png);
+    background-color: #357A3D 
+}
+button.hijau:hover {
+    background-color: #54A556;
+}
+
+button.hitam {
+    background-image: url(black1.png);
+    background-color: #505152;
+}
+button.hitam:hover {
+    background-color: #646464;
+}
+
+button.import {
+    background-image: url(import1.png);
+}
+
+button.kembali {
+    background-image: url(back1.png);
+}
+
+button.cetak {
+    background-image: url(printer.png);
+}
+
+button.papar {
+    background-image: url(monitor.png);
+}
+
+button.semak {
+    background-image: url(betul.png);
+}
+
+button.keluar {
+    background-image: url(log-out.png);
+}
+
+button.semula {
+    background-image: url(reset.png);
+}
+
+button:hover {
+    background-image: silver;
+    cursor : pointer;
+}
+
+.pp {
+    width: 150px;
+}
+
+.pp1{
+    width: 70%;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 0 20px;
+    
+    
+}
+
+.container.buttons
+{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.container .buttons .btn
+{
+    padding: 5px 15px;
+    display: inline-flex;
+    background-color: #E7DBCB;
+    color: black;
+    margin-left: 10px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .buttons .btn:hover{
+    background-color: #FB704D;
+}
+
+.container .buttons .btn .active
+{
+    background: #fbfcfd;
+}
+
+.container .buttons .btn:nth-child(2)
+{
+    font-size: 1.5em;
+}
+
+.container .buttons .btn:nth-child(3)
+{
+    font-size: 2em;
+}
+
+.table .content
+{
+    font-size: 1em;
+    color: #444;
+}
+
+.table .content .bil,
+.table .content .soalan
+{
+    transition: 0.5s;
+}

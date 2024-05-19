@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="kuiz.css">
+<h3>BORANG KEMASKINI SOALAN</h3>
+
+<form action="kuiz_update.php" method="post">
+ <table> 
+     <tr>
+         <td>ID GURU :</td>
+         <td><input type="text" id="idguru" onblur="semak()" name="idguru" placeholder="G000" pattern="[A-Z0-9]{4}" oninvalid="this.setCustomValidity('Sila masukkan 4 aksara')" oninput="this.setCustomValidity('')"></td>
+     </tr>
+     <tr>
+         <td> ID SOALAN :</td>
+         <td><input type="text" id="idsoalan" onblur="semak()" name="idsoalan" placeholder="S000" pattern="[A-Z0-9]{4}" oninvalid="this.setCustomValidity('Sila masukkan 4 nombor')" oninput="this.setCustomValidity('')"></td>
+     </tr>
+     <tr>
+         <td> SOALAN :</td>
+         <td><input type="text" name="soalan"></td>
+     </tr>
+      <tr>
+         <td> A :</td>
+         <td><input type="text" name="jawapana"></td>
+     </tr>
+      <tr>
+         <td> B :</td>
+         <td><input type="text" name="jawapanb"></td>
+     </tr>
+      <tr>
+         <td> C :</td>
+         <td><input type="text" name="jawapanc"></td>
+     </tr>
+      <tr>
+         <td> D :</td>
+         <td><input type="text" name="jawapand"></td>
+     </tr>
+      <tr>
+         <td> JAWAPAN SEBENAR :</td>
+         <td><input type="text" name="jawapansebenar"></td>
+     </tr>
+    </table>
+    <button class="semula" type="reset">RESET</button>
+    <button class="update" type="submit">UPDATE</button>
+</form>

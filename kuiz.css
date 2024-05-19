@@ -1,0 +1,88 @@
+h3{
+    font-family: font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    
+    width: 800px;
+    padding: 6px 25px;
+    border: 2px solid black;
+    border-radius: 10px 10px 0 0;
+    margin: 20px auto 0px;
+    background-color: #34495E  ;
+    box-shadow: 10px 10px 5px rgba(96, 96, 96, 0.7);
+}
+
+form{
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    
+    width: 800px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px auto;
+    background-color: #FAD7A0;
+    box-shadow: 10px 10px 5px rgba(96, 96, 96, 0.7);
+}
+
+/*borang selain login*/
+form.panjang, h3.panjang{
+    width: 350px;
+}
+
+/*cantumkan sekali*/
+input[type="text"],
+input[type="password"],
+select{
+    width: 600px;
+    padding:5px;
+    margin: 5px;
+}
+
+table{
+    font-family: verdana;
+    font-size: 16px;
+}
+
+button {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: whitesmoke;
+    
+    width: 120px;
+    padding: 7px 8px 7px 32px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: #ABB2B9;
+    background-position: 8px;
+    background-repeat: no-repeat;
+}
+
+button:hover{
+    background-color: #48C9B0;
+    cursor : pointer;
+}
+
+button.padam {
+    background-image: url(delete1.png);
+}
+
+button.tambah {
+    background-image: url(add.png);
+}
+
+button.semula {
+    background-image: url(reset.png);
+}
+
+button.update {
+    background-image: url(update.png);
+}

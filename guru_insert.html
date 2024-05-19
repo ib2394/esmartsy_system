@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="borang.css">
+<link rel="stylesheet" href="button.css">
+<h3> BORANG TAMBAH GURU </h3>
+<form action="guru_insert.php" method="post">
+    <table>
+       <tr>
+           <td> ID GURU :</td>
+           <td><input type="text" id="idguru" onblur="semak()" name="idguru" placeholder="G000" pattern="[A-Z0-9]{4}" oninvalid="this.setCustomValidity('Sila masukkan 4 aksara')" oninput="this.setCustomValidity('')"></td>
+       </tr>
+       <tr> 
+           <td> NAMA GURU :</td>
+           <td><input type="text" name="namaguru"></td>
+       </tr>
+        <tr>
+            <td> PASSWORD :</td>
+            <td><input type="text" name="passguru"></td>
+        </tr>
+    </table>
+    <button class="semula" type="reset">RESET</button>
+    <button class="plus" type="submit">TAMBAH</button>
+</form>
+
+<script>
+        function semak() {
+            var idguru = document.getElementById("idguru").value;
+            
+            if(idguru.lenght == 0)
+                alert("Sila isikan idguru");
+            else if(idguru.lenght > 4)
+                alert("ID Guru tidak boleh melebihi 4 aksara");
+        }
+        
+    </script>
